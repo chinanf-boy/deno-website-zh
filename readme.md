@@ -9,7 +9,7 @@
 [size-img]: https://packagephobia.now.sh/badge?p=Name
 [size]: https://packagephobia.now.sh/result?p=Name
 
-「 JavaScript 和 TypeScript 安全运行时，由 V8, Rust, 和 Tokio 构建。」
+「 JavaScript 和 TypeScript 安全运行时，使用 V8, Rust, 和 Tokio 构建。」
 
 [中文](./readme.md) | [english](https://github.com/denoland/deno)
 
@@ -37,7 +37,6 @@
 - [x] [手册](./manual.zh.md)
 - [x] [风格指南](./style_guide.zh.md)
 
-
 ### 贡献
 
 欢迎 👏 勘误/校对/更新贡献 😊 [具体贡献请看](https://github.com/chinanf-boy/chinese-translate-list#贡献)
@@ -48,11 +47,11 @@
 
 ---
 
-![](images/deno_logo_3.svg)
+![](docs/images/deno_logo_3.svg)
 
 # Deno
 
-JavaScript 和 TypeScript 安全运行时，由 V8, Rust, 和 Tokio 构建。
+JavaScript 和 TypeScript 安全运行时，使用 V8, Rust, 和 Tokio 构建。
 
 <table>
         <tr>
@@ -179,6 +178,6 @@ main();
 
 [社区聊天室](https://gitter.im/denolife/Lobby)
 
-[基准](benchmarks.html)
+[基准](https://deno.land/benchmarks.html)
 
 [awesome Deno](https://github.com/denolib/awesome-deno)

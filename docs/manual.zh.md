@@ -1,55 +1,5 @@
 # Deno 手册
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-- [免责声明](#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E)
-- [介绍](#%E4%BB%8B%E7%BB%8D)
-  - [哲学](#%E5%93%B2%E5%AD%A6)
-  - [目标](#%E7%9B%AE%E6%A0%87)
-  - [反目标](#%E5%8F%8D%E7%9B%AE%E6%A0%87)
-- [安装程序](#%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F)
-  - [二进制安装](#%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85)
-  - [从源代码生成](#%E4%BB%8E%E6%BA%90%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90)
-    - [先决条件](#%E5%85%88%E5%86%B3%E6%9D%A1%E4%BB%B6)
-    - [其他有用的命令](#%E5%85%B6%E4%BB%96%E6%9C%89%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4)
-- [API 参考](#api-%E5%8F%82%E8%80%83)
-  - [deno --types](#deno---types)
-  - [参考网站](#%E5%8F%82%E8%80%83%E7%BD%91%E7%AB%99)
-- [实例](#%E5%AE%9E%E4%BE%8B)
-  - [Unix "cat"程序的实现](#unix-cat%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AE%9E%E7%8E%B0)
-  - [TCP 回音服务器](#tcp-%E5%9B%9E%E9%9F%B3%E6%9C%8D%E5%8A%A1%E5%99%A8)
-  - [检查和撤消权限](#%E6%A3%80%E6%9F%A5%E5%92%8C%E6%92%A4%E6%B6%88%E6%9D%83%E9%99%90)
-  - [文件服务器](#%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8)
-  - [运行子过程](#%E8%BF%90%E8%A1%8C%E5%AD%90%E8%BF%87%E7%A8%8B)
-  - [链接到第三方代码](#%E9%93%BE%E6%8E%A5%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E4%BB%A3%E7%A0%81)
-  - [测试当前文件，是否为主程序](#%E6%B5%8B%E8%AF%95%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E4%B8%BA%E4%B8%BB%E7%A8%8B%E5%BA%8F)
-- [命令行界面](#%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2)
-  - [标志](#%E6%A0%87%E5%BF%97)
-  - [环境变量](#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F)
-  - [V8 标志](#v8-%E6%A0%87%E5%BF%97)
-- [内部详细信息](#%E5%86%85%E9%83%A8%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF)
-  - [deno 和 linux 的类比](#deno-%E5%92%8C-linux-%E7%9A%84%E7%B1%BB%E6%AF%94)
-    - [资源](#%E8%B5%84%E6%BA%90)
-    - [metrics](#metrics)
-  - [示意图](#%E7%A4%BA%E6%84%8F%E5%9B%BE)
-  - [分析](#%E5%88%86%E6%9E%90)
-  - [用 LLDB 调试](#%E7%94%A8-lldb-%E8%B0%83%E8%AF%95)
-  - [Deno 核心](#deno-%E6%A0%B8%E5%BF%83)
-  - [Flatbuffers](#flatbuffers)
-  - [更新预构建的二进制文件](#%E6%9B%B4%E6%96%B0%E9%A2%84%E6%9E%84%E5%BB%BA%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6)
-  - [连续基准](#%E8%BF%9E%E7%BB%AD%E5%9F%BA%E5%87%86)
-  - [Logos](#logos)
-- [贡献](#%E8%B4%A1%E7%8C%AE)
-  - [提交 PR](#%E6%8F%90%E4%BA%A4-pr)
-  - [`third_party`的改变](#third_party%E7%9A%84%E6%94%B9%E5%8F%98)
-  - [添加 Ops（即绑定）](#%E6%B7%BB%E5%8A%A0-ops%E5%8D%B3%E7%BB%91%E5%AE%9A)
-  - [文档化 API](#%E6%96%87%E6%A1%A3%E5%8C%96-api)
-    - [利用 JSDoc](#%E5%88%A9%E7%94%A8-jsdoc)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## 免责声明
 
 警告语：Deno 正在开发中。我们鼓励勇敢的早期采用者，但期望反馈大或小的 Bug。API 如有变更，恕不另行通知。[错误报告](https://github.com/denoland/deno/issues)会有用！

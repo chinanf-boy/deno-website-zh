@@ -9,13 +9,13 @@
 [size-img]: https://packagephobia.now.sh/badge?p=Name
 [size]: https://packagephobia.now.sh/result?p=Name
 
-「 deno 」
+「 JavaScript 和 TypeScript 安全运行时，由 V8, Rust, 和 Tokio 构建。」
 
 [中文](./readme.md) | [english](https://github.com/denoland/deno)
 
 ---
 
-## 校对 🀄️
+## 校对 ✅
 
 <!-- doc-templite START generated -->
 <!-- repo = 'denoland/deno' -->
@@ -31,6 +31,13 @@
 
 <!-- doc-templite END generated -->
 
+原文：denoland/deno/website
+
+- [x] readme
+- [x] [手册](./manual.zh.md)
+- [x] [风格指南](./style_guide.zh.md)
+
+
 ### 贡献
 
 欢迎 👏 勘误/校对/更新贡献 😊 [具体贡献请看](https://github.com/chinanf-boy/chinese-translate-list#贡献)
@@ -45,31 +52,77 @@
 
 # Deno
 
-A secure runtime for JavaScript and TypeScript built with V8, Rust, and Tokio
+JavaScript 和 TypeScript 安全运行时，由 V8, Rust, 和 Tokio 构建。
 
-Linux & Mac
-
-Windows
-
-[deno](https://github.com/denoland/deno)
-
-[![](https://travis-ci.com/denoland/deno.svg?branch=master)](https://travis-ci.com/denoland/deno)
-
-[![](https://ci.appveyor.com/api/projects/status/yel7wtcqwoy0to8x/branch/master?svg=true)](https://ci.appveyor.com/project/deno/deno)
-
-[deno_std](https://github.com/denoland/deno_std)
-
-[![](https://dev.azure.com/denoland/deno_std/_apis/build/status/denoland.deno_std?branchName=master)](https://dev.azure.com/denoland/deno_std/_build?definitionId=2)
-
-[deno_install](https://github.com/denoland/deno_install)
-
-[![](https://travis-ci.com/denoland/deno_install.svg?branch=master)](https://travis-ci.com/denoland/deno_install)
-
-[![](https://ci.appveyor.com/api/projects/status/gtekeaf7r60xa896?branch=master&svg=true)](https://ci.appveyor.com/project/deno/deno-install)
-
-[registry](https://github.com/denoland/registry)
-
-[![](https://travis-ci.com/denoland/registry.svg?branch=master)](https://travis-ci.com/denoland/registry)
+<table>
+        <tr>
+          <th></th>
+          <th>Linux &amp; Mac</th>
+          <th>Windows</th>
+        </tr>
+        <tr>
+          <th><a href="https://github.com/denoland/deno">deno</a></th>
+          <td>
+            <a class="badge" href="https://travis-ci.com/denoland/deno">
+              <img
+                src="https://travis-ci.com/denoland/deno.svg?branch=master"
+              />
+            </a>
+          </td>
+          <td>
+            <a class="badge" href="https://ci.appveyor.com/project/deno/deno">
+              <img
+                src="https://ci.appveyor.com/api/projects/status/yel7wtcqwoy0to8x/branch/master?svg=true"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th><a href="https://github.com/denoland/deno_std">deno_std</a></th>
+          <td colspan="2">
+            <a
+              class="badge"
+              href="https://dev.azure.com/denoland/deno_std/_build?definitionId=2"
+            >
+              <img
+                src="https://dev.azure.com/denoland/deno_std/_apis/build/status/denoland.deno_std?branchName=master"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <a href="https://github.com/denoland/deno_install">deno_install</a>
+          </th>
+          <td>
+            <a class="badge" href="https://travis-ci.com/denoland/deno_install">
+              <img
+                src="https://travis-ci.com/denoland/deno_install.svg?branch=master"
+              />
+            </a>
+          </td>
+          <td>
+            <a
+              class="badge"
+              href="https://ci.appveyor.com/project/deno/deno-install"
+            >
+              <img
+                src="https://ci.appveyor.com/api/projects/status/gtekeaf7r60xa896?branch=master&svg=true"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th><a href="https://github.com/denoland/registry">registry</a></th>
+          <td colspan=2>
+            <a class="badge" href="https://travis-ci.com/denoland/registry">
+              <img
+                src="https://travis-ci.com/denoland/registry.svg?branch=master"
+              />
+            </a>
+          </td>
+        </tr>
+      </table>
 
 ## 安装
 

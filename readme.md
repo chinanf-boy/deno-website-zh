@@ -47,7 +47,8 @@
 
 ---
 
-![](docs/images/deno_logo_3.svg)
+<img id="logo" src="docs/images/deno_logo_3.svg" width="500" />
+
 
 # Deno
 
